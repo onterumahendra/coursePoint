@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar-default {
+    background-color: #24292e !important;
+    border-color: #24292e !important;
+}
+.navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a{
+    color:#fff !important;
+}
+body{
+    background:#efefef !important;
+}
+.pad0{padding: 0px !important;}
+.mr0{margin: 0px !important;}
+.br0{border-radius: 0px !important}
