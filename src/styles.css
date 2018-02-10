@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body,html {
+    font-family: Roboto-Regular !important;
+  }
 .navbar-default {
-    background-color: #24292e !important;
-    border-color: #24292e !important;
+    background-color: #00BCD4 !important;
+    border-color: #00BCD4 !important;
 }
 .navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a{
     color:#fff !important;
@@ -9,6 +12,22 @@
 body{
     background:#efefef !important;
 }
+.nav-pills > li > a,.av-pills > li > a:hover, .av-pills > li > a:focus{
+    color:#fff !important;
+    background-color: #4c4c4c !important;
+    border-radius: 0 !important;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+    color: #fff !important;
+    background-color: #F7931E !important;
+}
+.btn-success {
+    background-color: #39B54A !important;
+    border-color: #39B54A !important;
+}
+
 .pad0{padding: 0px !important;}
 .mr0{margin: 0px !important;}
 .br0{border-radius: 0px !important}
+.br3{border-radius: 3px !important}
