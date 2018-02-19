@@ -1,0 +1,119 @@
+
+
+<div class="container mrTp20" style="background:#fff;" >
+  <div class="row text-right mr0">
+      <button type="button" class="btn btn-success br0 mrTp20" data-toggle="modal" data-target="#myModal">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Course
+        </button>
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs mrBt20" role="tablist">
+      <li role="presentation" class="active"><a href="#classroom" aria-controls="home" role="tab" data-toggle="tab">Classroom</a></li>
+      <li role="presentation"><a href="#online" aria-controls="profile" role="tab" data-toggle="tab">Online</a></li>
+      <li role="presentation"><a href="#weekend" aria-controls="messages" role="tab" data-toggle="tab">Weekend</a></li>
+      <li role="presentation"><a href="#prjWrkShop" aria-controls="settings" role="tab" data-toggle="tab">Project Workshops</a></li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="classroom">
+          <CourseTable></CourseTable>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="online">
+          <CourseTable></CourseTable>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="weekend">
+          <CourseTable></CourseTable>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="prjWrkShop">
+          <CourseTable></CourseTable>
+      </div>
+    </div>
+  
+  </div>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Add Course</h4>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="courseName" class="col-sm-2 control-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="courseName" placeholder="Name of the Course">
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="courseType" class="col-sm-2 control-label">Type</label>
+                    <div class="col-sm-4">
+                     <select class="form-control" id="courseType">
+                       <option>Classroom</option>
+                       <option>Online</option>
+                       <option>Weekend</option>
+                       <option>Project Workshop</option>
+                     </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="courseFaculty" class="col-sm-2 control-label">Faculty</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="courseFaculty" placeholder="Name of Faculty">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Time</label>
+                        <div class="col-sm-2">
+                            <select class="form-control">
+                                <option>00</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control">
+                                <option>00</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-2 control-label">Date</label>
+                          <div class="col-sm-2">
+                              <select class="form-control">
+                                  <option>00</option>
+                                </select>
+                          </div>
+                          <div class="col-sm-2">
+                              <select class="form-control">
+                                  <option>00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="courseDuration" class="col-sm-2 control-label">Duration</label>
+                            <div class="col-sm-2">
+                              <input type="number" class="form-control" id="courseDuration">
+                            </div>
+                            <div class="col-sm-2"> Days </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="courseVenue" class="col-sm-2 control-label">Venue</label>
+                              <div class="col-sm-10">
+                                <textarea  class="form-control" id="courseVenue" placeholder="Venue Adderess"></textarea>
+                              </div>
+                            </div>
+                
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default br0" data-dismiss="modal"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Close</button>
+          <button type="button" class="btn btn-success br0"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Save</button>
+        </div>
+      </div>
+    </div>
+  </div>

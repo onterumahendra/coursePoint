@@ -18,10 +18,10 @@
                 </select>
               </div>
               <div class="col-md-4 pad0">
-                <input type="email" class="form-control input-lg br0" placeholder="Enter Course.">
+                <input type="email" class="form-control input-lg br0" placeholder="Search for Courses">
               </div>
               <div class="col-md-2 pad0">
-                <button type="submit" class="btn btn-lg btn-block btn-success br0"> <i class="fa fa-search" aria-hidden="true"> </i> Search</button>
+                <button type="submit" class="btn btn-lg btn-block btn-success br0" [routerLink]="['list']"> <i class="fa fa-search" aria-hidden="true"> </i> Search</button>
               </div>
             </div>
           </form>
@@ -30,3 +30,16 @@
     </div>
      
   </header>
+  <div class="container">
+  <div class="row">
+<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
+<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
+<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
+<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
+<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
+<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
+<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
+<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
+
+  </div>
+</div>
