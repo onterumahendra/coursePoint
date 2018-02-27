@@ -1,0 +1,16 @@
+[{
+	"course": "Digital Marketing",
+	"courseId": "79aaab88-78f0-4129-b523-6222cf32a516",
+	"institute": "Naresh IT",
+	"instituteId": "NARESHIT",
+	"faculty": "Mr Rakesh",
+	"date": "28th February",
+	"time": "9:00 AM",
+	"duration": 45,
+	"courseFee": 4500,
+	"imgUrl": "java.jpg",
+	"rating": 5,
+	"views": 100,
+	"prerequisites ": "",
+	"overview": "http://nareshit.in/digital-marketing-training/"
+}]
