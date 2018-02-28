@@ -1,45 +1,89 @@
 <!-- Masthead -->
 <header class="masthead text-white text-center">
-  <!-- <div class="overlay"></div> -->
+    <!-- <div class="overlay"></div> -->
     <div class="container">
-      <div class="row mr0">
-         <h1 class="mb-5">Search Course from best Instistutes near you</h1>
-        <!-- <h3>Order food online from the best restaurants near you</h3> -->
-        </div>
-        <div class="row mr0">
+       <div class="row mr0">
+          <h1 class="mb-5">Search Course from best Instistutes near you</h1>
+          <!-- <h3>Order food online from the best restaurants near you</h3> -->
+       </div>
+       <div class="row mr0">
           <form>
-            <div class="form-row">
-              <div class="col-md-2 col-md-offset-2 pad0">
-                <select class="form-control input-lg br0" >
-                    <option value="">Select Location</option>
-                    <option value="">Hyderabad</option>
-                    <option value="">Pune</option>
-                    <option value="">Bangalore</option>
-                </select>
-              </div>
-              <div class="col-md-4 pad0">
-                <input type="email" class="form-control input-lg br0" placeholder="Search for Courses">
-              </div>
-              <div class="col-md-2 pad0">
-                <button type="submit" class="btn btn-lg btn-block btn-success br0" [routerLink]="['list']"> <i class="fa fa-search" aria-hidden="true"> </i> Search</button>
-              </div>
-            </div>
+             <div class="form-row">
+                <div class="col-md-2 col-md-offset-2 pad0">
+                   <select class="form-control input-lg br0" >
+                      <option value="">Select Location</option>
+                      <option value="">Hyderabad</option>
+                      <option value="">Pune</option>
+                      <option value="">Bangalore</option>
+                   </select>
+                </div>
+                <div class="col-md-4 pad0">
+                   <input type="email" class="form-control input-lg br0" placeholder="Search for Courses">
+                </div>
+                <div class="col-md-2 pad0">
+                   <button type="submit" class="btn btn-lg btn-block btn-warning br0" [routerLink]="['list']"> <i class="fa fa-search" aria-hidden="true"> </i> Search</button>
+                </div>
+             </div>
           </form>
-     
-      </div>
+       </div>
     </div>
-     
-  </header>
-  <div class="container">
-  <div class="row">
-<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
-<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
-<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
-<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
-<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
-<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
-<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
-<div class="col-sm-4 col-md-3"><CourseList></CourseList></div>
-
-  </div>
-</div>
+ </header>
+ <div class="container">
+    <div class="row mr0">
+       <h2 class="pull-left">Top Rated Courses</h2>
+       <button class="btn btn-outline-success br0 pull-right mrTp20"> See All</button>
+    </div>
+    <hr>
+    <div class="row">
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+    </div>
+    <div class="row mr0">
+       <h2 class="pull-left">Currently Running Courses</h2>
+       <button class="btn btn-outline-success br0 pull-right mrTp20"> See All</button>
+    </div>
+    <hr>
+    <div class="row">
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+    </div>
+    <div class="row mr0">
+       <h2 class="pull-left">Starting Soon Courses</h2>
+       <button class="btn btn-outline-success br0 pull-right mrTp20"> See All</button>
+    </div>
+    <hr>
+    <div class="row">
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+       <div class="col-sm-4 col-md-3">
+          <CourseList></CourseList>
+       </div>
+    </div>
+ </div>
