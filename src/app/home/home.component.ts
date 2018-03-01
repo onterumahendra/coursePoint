@@ -4,15 +4,21 @@ import { HomeService } from './home.service';
 
 @Component({
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
-  providers: [HomeService] 
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  TRCourse: any; 
-   constructor(private _homeService: HomeService) { }  
+  TRCourses: any; 
+   constructor(private homeService:HomeService) {}   
+  
+   ngOnInit(): void {
+       this.homeService.getTopRatedCourses().subscribe(data => {this.TRCourses = data});
 
-   ngOnInit(): void { 
-      this.TRCourse = this._homeService.getTopRatedCourses(); 
-      console.log(this.TRCourse);
-   } 
+    // this.http.get('./assets/JSON/courseList.json').subscribe(data => {
+    //   console.log(data);
+    //   this.TRCourses = data;
+    // },
+    // err => {
+    //   console.log("Error occured.")
+    // });
+  }
 }

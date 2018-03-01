@@ -13,6 +13,7 @@ import { DetailsComponent } from './details/details.component';
 import { CourseComponent } from './shared/course.component';
 import { CourseTableComponent } from './shared/courseTable.component';
 import { insCourseScheduleComponent } from './insCourseSch/insCourseSch.component';
+import { HomeService } from './home/home.service';
 
 
 const appRoutes: Routes = [
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [HomeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
