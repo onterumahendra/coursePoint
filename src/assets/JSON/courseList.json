@@ -9,7 +9,7 @@
 		"duration": 45,
 		"courseFee": 4500,
 		"imgUrl": "java.jpg",
-		"rating": 5,
+		"rating": 4,
 		"views": 100,
 		"prerequisites ": "",
 		"overview": "http://nareshit.in/digital-marketing-training/"
@@ -41,7 +41,7 @@
 		"duration": 60,
 		"courseFee": 2500,
 		"imgUrl": "net.jpg",
-		"rating": 5,
+		"rating": 3,
 		"views": 90,
 		"prerequisites ": "",
 		"overview": "http://nareshit.in/c-net-training/"

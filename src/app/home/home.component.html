@@ -35,8 +35,8 @@
     </div>
     <hr>
     <div class="row">
-        <div class="col-sm-4 col-md-3" *ngFor="let course of TRCourses">
-           <CourseList [course]="course"></CourseList>
+        <div class="col-sm-4 col-md-3" *ngFor="let course of TRCourses;let i = index">
+           <CourseList [course]="course" *ngIf='i<4'></CourseList>
         </div>
      </div>
     <div class="row mr0">
@@ -45,18 +45,18 @@
     </div>
     <hr>
     <div class="row">
-        <div class="col-sm-4 col-md-3" *ngFor="let course of TRCourses">
-            <CourseList [course]="course"></CourseList>
+        <div class="col-sm-4 col-md-3" *ngFor="let course of TRCourses;let i = index">
+            <CourseList [course]="course" *ngIf='i<4'></CourseList>
          </div>
     </div>
     <div class="row mr0">
-       <h2 class="pull-left">Starting Soon Courses</h2>
+       <h2 class="pull-left">Upcoming Courses</h2>
        <button class="btn btn-outline-success br0 pull-right mrTp20"> See All</button>
     </div>
     <hr>
     <div class="row">
-        <div class="col-sm-4 col-md-3" *ngFor="let course of TRCourses">
-            <CourseList [course]="course"></CourseList>
+        <div class="col-sm-4 col-md-3" *ngFor="let course of TRCourses;let i = index">
+            <CourseList [course]="course" *ngIf='i<4'></CourseList>
          </div>
      </div>
  </div>
