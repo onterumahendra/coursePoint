@@ -4,7 +4,7 @@
     <div class="container">
        <div class="row mr0">
           <h1 class="mb-5">Search Course from best Instistutes near you</h1>
-          <!-- <h3>Order food online from the best restaurants near you</h3> -->
+          <p style="color:#fff;font-size:18px;">Get ready to achieve your career goals with Course Point.</p> 
        </div>
        <div class="row mr0">
           <form>
@@ -21,7 +21,7 @@
                    <input type="email" class="form-control input-lg br0" placeholder="Search for Courses">
                 </div>
                 <div class="col-md-2 pad0">
-                   <button type="submit" class="btn btn-lg btn-block btn-warning br0" [routerLink]="['list']"> <i class="fa fa-search" aria-hidden="true"> </i> Search</button>
+                   <button type="submit" class="btn btn-lg btn-block btn-warning br0" [routerLink]="['courses']"> <i class="fa fa-search" aria-hidden="true"> </i> Search</button>
                 </div>
              </div>
           </form>
@@ -30,8 +30,8 @@
  </header>
  <div class="container">
     <div class="row mr0">
-       <h2 class="pull-left">Top Rated Courses</h2>
-       <button class="btn btn-outline-success br0 pull-right mrTp20"> See All</button>
+       <h2 class="pull-left" style="font-family: Roboto-Light">Top Trending Courses</h2>
+       <button class="btn btn-outline-success br0 pull-right mrTp20" [routerLink]="['featured']"> See All</button>
     </div>
     <hr>
     <div class="row">
@@ -40,8 +40,8 @@
         </div>
      </div>
     <div class="row mr0">
-       <h2 class="pull-left">Currently Running Courses</h2>
-       <button class="btn btn-outline-success br0 pull-right mrTp20"> See All</button>
+       <h2 class="pull-left" style="font-family: Roboto-Light">Currently Running Courses</h2>
+       <button class="btn btn-outline-success br0 pull-right mrTp20" [routerLink]="['featured']"> See All</button>
     </div>
     <hr>
     <div class="row">
@@ -50,8 +50,8 @@
          </div>
     </div>
     <div class="row mr0">
-       <h2 class="pull-left">Upcoming Courses</h2>
-       <button class="btn btn-outline-success br0 pull-right mrTp20"> See All</button>
+       <h2 class="pull-left" style="font-family: Roboto-Light">Upcoming Courses</h2>
+       <button class="btn btn-outline-success br0 pull-right mrTp20" [routerLink]="['featured']"> See All</button>
     </div>
     <hr>
     <div class="row">

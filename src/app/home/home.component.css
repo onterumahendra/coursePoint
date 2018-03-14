@@ -7,7 +7,7 @@ header.masthead {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 120px;
+    padding-top: 70px;
     padding-bottom: 120px;
   }
   hr {
@@ -39,8 +39,8 @@ background-color: rgba(12, 11, 11, 0.82);
   
   @media (min-width: 768px) {
     header.masthead {
-      padding-top: 190px;
-      padding-bottom: 190px;
+      padding-top: 70px;
+      padding-bottom: 120px;
     }
     header.masthead h1 {
       font-size: 40px;
