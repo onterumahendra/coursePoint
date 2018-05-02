@@ -7,5 +7,5 @@ import { Component,Input } from '@angular/core';
 })
 export class CourseComponent {
   @Input('course') course : any;  
-  stars:number[] = [1,2,3,4,5]; 
+  //stars:number[] = [1,2,3,4,5]; 
 }

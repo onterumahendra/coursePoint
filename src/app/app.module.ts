@@ -6,7 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { cdtLoginComponent } from './cdtLogin/cdtLogin.component';
-import { insLoginComponent } from './insLogin/insLogin.component';
+import { loginComponent } from './login/login.component';
+import { signupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { CourseListComponent } from './courseList/courseList.component';
 import { DetailsComponent } from './details/details.component';
@@ -15,12 +16,14 @@ import { CourseTableComponent } from './shared/courseTable.component';
 import { insCourseScheduleComponent } from './insCourseSch/insCourseSch.component';
 import { HomeService } from './home/home.service';
 import { FeaturedComponent } from './featured/featured.component';
+import { LogoDirective } from './shared/logo.directive'
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'candidateLogin', component: cdtLoginComponent },
-  { path: 'instituteLogin', component: insLoginComponent },
+  { path: 'instituteLogin', component: loginComponent },
+  { path: 'instituteSignUp', component: signupComponent },
   { path: 'instituteCourseSchedules', component: insCourseScheduleComponent },
   { path: 'courses', component: CourseListComponent },
   { path: 'details',component: DetailsComponent },
@@ -29,8 +32,8 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent,cdtLoginComponent,insLoginComponent,HomeComponent,CourseListComponent,
-    DetailsComponent,CourseComponent,insCourseScheduleComponent,CourseTableComponent,FeaturedComponent
+  declarations: [AppComponent,cdtLoginComponent,loginComponent,signupComponent,HomeComponent,CourseListComponent,
+    DetailsComponent,CourseComponent,insCourseScheduleComponent,CourseTableComponent,FeaturedComponent,LogoDirective
   ],
   imports: [
     BrowserModule,

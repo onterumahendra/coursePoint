@@ -1,19 +1,27 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-         <a class="navbar-brand" [routerLink]="['/']"><i class="fa fa-copyright" aria-hidden="true"> </i> {{title}}</a>
+    <div class="container">
+       <div class="navbar-header">
+          <div style="display:flex;padding-top:5px;">
+             <div CPLogo></div>
+             <div style="line-height: 32px;
+                font-size: 20px;
+                font-weight: bold;        
+                font-family: Roboto-Medium;">{{title}}</div>
+          </div>
+          <!-- <a class="navbar-brand" [routerLink]="['/']"><div CPLogo></div> <div>{{title}}</div></a> -->
+       </div>
+       <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+             <!-- <li ><a [routerLink]="['list']">list</a></li>
+                <li><a [routerLink]="['details']">Details</a></li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+             <!-- <li><a [routerLink]="['candidateLogin']" ><i class="fa fa-user" aria-hidden="true"> </i> Candidate Log in</a></li> -->
+             <li><button [routerLink]="['instituteSignUp']" class="btn btn-warning">Add your Institute</button></li>
+             <li><button [routerLink]="['instituteLogin']" class="btn btn-outline-warning">Institutes Login</button></li>
+          </ul>
+       </div>
+       <!--/.nav-collapse -->
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <!-- <li ><a [routerLink]="['list']">list</a></li>
-        <li><a [routerLink]="['details']">Details</a></li> -->
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <!-- <li><a [routerLink]="['candidateLogin']" ><i class="fa fa-user" aria-hidden="true"> </i> Candidate Log in</a></li> -->
-        <li><a [routerLink]="['instituteLogin']"><i class="fa fa-university" aria-hidden="true"> </i> Institute Log in</a></li>
-       </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
-<router-outlet></router-outlet>
-
+ </nav>
+ <router-outlet></router-outlet>

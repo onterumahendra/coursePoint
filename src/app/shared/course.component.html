@@ -1,13 +1,16 @@
 <div class="thumbnail">
-    <img src="../../../assets/images/{{course.imgUrl}}" style ="height:100px;" alt="No Image">
+  <div style ="height:100px;text-align:center;">  
+  <img src="../../../assets/images/{{course.imgUrl}}"  style ="max-height:100%;max-width:100%;" alt="No Image">
+    </div>
     <div class="caption">
       <h4>{{course.course}} <span class="pull-right"> <i class="fa fa-inr" ></i> {{course.courseFee}}</span></h4>
       <p style="font-weight:bold;color:#00BCD4;">{{course.institute}}</p>
       <p><i class="fa fa-calendar"></i>  {{course.date}} @ {{course.time}} | {{course.duration}} days</p>
       <p>
-        <i class="fa fa-star" *ngFor="let star of stars" [ngClass]="{'active':star <=course.rating}"></i>
+        <span style="background:#39B54A;color:#fff;padding:0px 5px;margin-right:3px;"> <i class="fa fa-star" style="color:#FFF;"></i> {{course.rating}} </span>
+        <!-- <i class="fa fa-star" *ngFor="let star of stars" [ngClass]="{'active':star <=course.rating}"></i> -->
         
-        -  {{course.reviews}} reviews </p>
+        <span style="color:#878787;margin-right:3px;">(0{{course.rating}})</span> -  {{course.reviews}} reviews </p>
       <div class="row" style="margin:0px -13px -13px">
         <a href="#" class="col-xs-6 btn btn-default br0" role="button">DETAILS</a> 
         <a href="#" class=" col-xs-6 btn btn-warning br0" role="button">ENROLL</a>
