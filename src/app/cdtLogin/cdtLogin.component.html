@@ -13,7 +13,7 @@
            </ul>
            <div class="tab-content">
               <div id="cdtSignIn" class="tab-pane fade in active">
-                 <form role="form">
+                 <form role="form" [formGroup]="loginForm2">
                     <div class="form-group">
                        <input type="email" class="form-control input-lg br3" placeholder="Email Address" >
                     </div>
@@ -25,7 +25,7 @@
               </div>
               <!-- sign up form -->
               <div id="cdtSignUp" class="tab-pane fade">
-                 <form role="form">
+                 <form role="form" [formGroup]="loginForm2">
                     <!-- <h4 class="text-center">New Candidate Registration</h4> -->
                     <div class="form-group">
                        <input type="text" class="form-control input-lg br3" placeholder="First Name">
