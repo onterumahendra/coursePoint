@@ -1,6 +1,6 @@
 # Course Point
 
-Skill focused platform, Course Point helps students to find and select various Technical and non Technical classes in a particular city. It partners with Institutes to offer a wide range of classes like Classroom training, Online Classes, Weekend Batches, Workshops, among others, that users can choose from.
+Skill focused platform, Course Point helps students to find and select various Technical and non Technical classes in a particular city. It partners with Institutes to offer a wide range of classes like Classroom training, Online Classes, Weekend Batches, Workshops, among others, that users can choose from..
 
 The information provided include Course date, address, price, reviews, and ratings. This makes it easier to compare available courses.
 
